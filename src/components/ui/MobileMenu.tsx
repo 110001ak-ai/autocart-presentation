@@ -19,19 +19,20 @@ export default function MobileMenu() {
       className={`mobile-menu${mobileMenuOpen ? " open" : ""}`}
       id="mobileMenu"
     >
-      {NAV_SECTIONS.map(({ id, label }, i) => (
+      {NAV_SECTIONS.map(({ id, label, icon }) => (
         <a
           key={id}
           href={`#${id}`}
           className="mobile-nav-link"
           onClick={closeMobileMenu}
         >
-          {String(i + 1).padStart(2, "0")} — {label}
+          <span className="mobile-nav-icon">{icon}</span>
+          {label}
         </a>
       ))}
-      <a href="#cta" className="mobile-cta" onClick={closeMobileMenu}>
+      {/* <a href="#cta" className="mobile-cta" onClick={closeMobileMenu}>
         Get Early Access
-      </a>
+      </a> */}
     </div>
   );
 }

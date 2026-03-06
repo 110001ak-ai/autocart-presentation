@@ -9,7 +9,8 @@ export default function CtaFooter() {
     <>
       <div className="cta-wrap" id="cta">
         <h2>
-          The House That<br />
+          The House That
+          <br />
           <span style={{ color: "var(--accent)" }}>Runs Itself.</span>
         </h2>
         <p>
@@ -19,8 +20,13 @@ export default function CtaFooter() {
       </div>
 
       <footer>
-        <div className="f-logo">Auto<span>Cart</span></div>
+        <div className="f-logo">
+          Auto<span>Cart</span>
+        </div>
         <p>AI-Powered Household Supply &amp; Delivery Optimization</p>
+        <a href="mailto:110001.ak@gmail.com" className="footer-mail">
+          ✉ &nbsp;110001.ak@gmail.com
+        </a>
       </footer>
     </>
   );

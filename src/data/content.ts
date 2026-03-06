@@ -10,15 +10,15 @@
 // ─── Navigation ──────────────────────────────────────────────────────────────
 
 export const NAV_SECTIONS = [
-  { id: "market",     label: "Market"     },
-  { id: "mindset",    label: "Mindset"    },
-  { id: "problem",    label: "Problem"    },
-  { id: "solution",   label: "Solution"   },
-  { id: "logistics",  label: "Logistics"  },
-  { id: "economics",  label: "Economics"  },
-  { id: "vision",     label: "Vision"     },
-  { id: "network",    label: "Network"    },
-  { id: "experience", label: "Experience" },
+  { id: "market",     label: "Market",     icon: "🌍" },
+  { id: "mindset",    label: "Mindset",    icon: "💡" },
+  { id: "problem",    label: "Problem",    icon: "⚠️" },
+  { id: "solution",   label: "Solution",   icon: "🤖" },
+  { id: "logistics",  label: "Logistics",  icon: "🚚" },
+  { id: "economics",  label: "Economics",  icon: "📊" },
+  { id: "vision",     label: "Vision",     icon: "🔭" },
+  { id: "network",    label: "Network",    icon: "🔗" },
+  { id: "experience", label: "Experience", icon: "✨" },
 ] as const;
 
 export type SectionId = (typeof NAV_SECTIONS)[number]["id"];
